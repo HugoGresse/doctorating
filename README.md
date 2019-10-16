@@ -2,8 +2,7 @@
 
 A Browser extension (WebExtension) to display Google Maps rating on Doctolib search results.
 
-// Screenshots here
-
+![screenshot](./promo/promo-1200x800.png)
 
 ## Contribute
 
@@ -27,7 +26,8 @@ A Browser extension (WebExtension) to display Google Maps rating on Doctolib sea
 
 ### Environment
 
-TODO
+1. Copy `.env.example` to `.env`
+2. Create a new Google Api Key that have access to the Place API, [here](https://console.cloud.google.com/)
 
 ### Docs
 
