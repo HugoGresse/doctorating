@@ -46,7 +46,7 @@ function displayRating(el, apiSearchResults, searchString) {
 async function getRating(searchString) {
     const gmapApiSearchString = encodeURIComponent(searchString)
 
-    const url = `https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=${gmapApiSearchString}&inputtype=textquery&fields=name,rating,place_id&key=`
+    const url = `https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=${gmapApiSearchString}&inputtype=textquery&fields=name,rating,place_id&key=${process.env.GOOGLE_PLACES_API_KEY}`
 
     try {
         const response = await fetch(url)
@@ -61,12 +61,9 @@ async function getRating(searchString) {
         console.error(error);
     }
 }
-console.log('toto')
 
 try {
     processSearchResults()
 } catch (error) {
     console.error("DoctoRating error", error)
 }
-
-console.log()
