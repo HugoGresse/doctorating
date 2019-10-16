@@ -1,0 +1,14 @@
+{
+  "appName": {
+    "message": "DoctoRating",
+    "description": "The name of the application"
+  },
+  "appShortName": {
+    "message": "doctorating",
+    "description": "The short_name (maximum of 12 characters recommended) is a short version of the app's name."
+  },
+  "appDescription": {
+    "message": "Display Google Maps rating on Doctolib search result.",
+    "description": "The description of the application"
+  }
+}

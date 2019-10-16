@@ -1,4 +1,4 @@
-let promiseQueue = []
+import $ from './vendor/jquery-3.4.1.min'
 
 const searchResultSelector = '.dl-search-result'
 const searchTitleSelector = '.dl-search-result-title'
@@ -46,7 +46,7 @@ function displayRating(el, apiSearchResults, searchString) {
 async function getRating(searchString) {
     const gmapApiSearchString = encodeURIComponent(searchString)
 
-    const url = `https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=${gmapApiSearchString}&inputtype=textquery&fields=name,rating,place_id&key=${GOOGLE_PLACES_API_KEY}`
+    const url = `https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=${gmapApiSearchString}&inputtype=textquery&fields=name,rating,place_id&key=`
 
     try {
         const response = await fetch(url)
@@ -61,6 +61,7 @@ async function getRating(searchString) {
         console.error(error);
     }
 }
+console.log('toto')
 
 try {
     processSearchResults()
@@ -68,4 +69,4 @@ try {
     console.error("DoctoRating error", error)
 }
 
-console.log(GOOGLE_PLACES_API_KEY)
+console.log()
