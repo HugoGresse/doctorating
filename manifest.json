@@ -1,0 +1,25 @@
+{
+
+    "manifest_version": 2,
+    "name": "DoctoRating",
+    "version": "1.0",
+  
+    "description": "Display Google Maps rating on Doctolib search result.",
+  
+    "icons": {
+      "32": "images/favicon-32x32.png",
+      "192": "images/android-chrome-192x192.png",
+      "512": "images/android-chrome-512x512.png",
+      "48": "images/48.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://*.doctolib.fr/*"],
+        "js": ["jquery-3.4.1.min.js", "doctorating.js"]
+      }
+    ],
+    "permissions": [
+        "*://*.googleapis.com/*"
+      ]
+  
+  }
