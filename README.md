@@ -4,6 +4,11 @@ A Browser extension (WebExtension) to display Google Maps rating on Doctolib sea
 
 ![screenshot](./promo/promo-1200x800.png)
 
+### Install DoctoRating
+
+- [Chrome: work in progress](https://chrome.google.com/webstore/detail/doctorating/eajeengjfhpfpopilpkfcodmionfcbkn)
+- [Firefox](https://addons.mozilla.org/fr/firefox/addon/doctorating/)
+
 ## Contribute
 
 ### Install
