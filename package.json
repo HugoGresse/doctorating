@@ -1,6 +1,6 @@
 {
-  "name": "DoctoRating",
-  "version": "1.0.0",
+  "name": "docto-rating",
+  "version": "1.0.1",
   "description": "Display Google Maps rating on Doctolib search result.",
   "scripts": {
     "dev": "webextension-toolbox dev",
