@@ -17,6 +17,9 @@
       "js": ["scripts/doctorating.js"]
     }
   ],
+  "background": {
+    "scripts": ["scripts/background.js"]
+  },
   "permissions": [
       "*://*.googleapis.com/*"
     ]
